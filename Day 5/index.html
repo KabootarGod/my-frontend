@@ -14,18 +14,20 @@
         <form>
             <div class="form-control">
                 <label for="email">Enter Email:</label>
-                <input type="email" id="email" placeholder="e.g example@email.com" required>
+                <input type="email" id="email" placeholder="e.g example@email.com">
                 <small class="error-message"></small>
             </div>
             <div class="form-control">
                 <label for="password">Enter Password:</label>
-                <input type="password" id="password" placeholder="e.g **********" required>
+                <div class="password-wrapper">
+                <input type="password" id="password" placeholder="e.g **********">
+                <button type="button" id="togglepassword" aria-label="Show Password">👁️</button>
+                </div>
                 <small class="error-message"></small>
-                <span class="toggle-password">👁️</span>
             </div>
 
             <button type="submit">Login</button>
-            <p class="status-message"></p>
+            <p class="status-message" id="status-message"></p>
         </form>
     </div>
     <script src="script.js"></script>
