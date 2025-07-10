@@ -1,6 +1,8 @@
-let username;
+const btn = document.getElementById("btn");
+const num = document.getElementById("num");
+let numbero;
 
-document.getElementById("mysubmit").onclick = function () {
-  username = document.getElementById("name").value;
-  document.getElementById("myH1").textContent = `Hello ${username}`;
+btn.onclick = function () {
+  numbero = Math.floor(Math.random() * 10) + 1;
+  num.textContent = numbero;
 };

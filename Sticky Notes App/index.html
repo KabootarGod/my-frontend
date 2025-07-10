@@ -1,87 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sticky Notes App</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <!--SideBar Start-->
-        <aside>
-            <div class="toggle">
-                <div class="logo">
-                    <h2>Sticky <span class="danger">Notes
-                        </span></h2>
-                    <div class="close" id="close-btn">
-                        <span class="material-icons-sharp">
-                            close
-                        </span>
-                    </div>
-                </div>
+      <!--SideBar Start-->
+      <aside>
+        <div class="toggle">
+          <div class="logo">
+            <h2>Sticky <span class="danger">Notes </span></h2>
+            <div class="close" id="close-btn">
+              <span class="material-icons-sharp"> close </span>
             </div>
+          </div>
+        </div>
 
-            <div class="sidebar">
-                <a href="#" class="active">
-                    <span class="material-icons-sharp">
-                        note
-                    </span>
-                    <h3>Notes</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">
-                        notifications
-                    </span>
-                    <h3>Reminders</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">
-                        archive
-                    </span>
-                    <h3>Archive</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">
-                        backup
-                    </span>
-                    <h3>Backups</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">
-                        auto_delete
-                    </span>
-                    <h3>Trash</h3>
-                </a>
-            </div>
-        </aside>
-        <!--End of SideBar-->
+        <div class="sidebar">
+          <a href="#" class="active">
+            <span class="material-icons-sharp"> note </span>
+            <h3>Notes</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp"> notifications </span>
+            <h3>Reminders</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp"> archive </span>
+            <h3>Archive</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp"> backup </span>
+            <h3>Backups</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp"> auto_delete </span>
+            <h3>Trash</h3>
+          </a>
+        </div>
+      </aside>
+      <!--End of SideBar-->
 
-        <!--Main Content-->
-        <main>
-            <form id="note-input">
-                <div class="note-input-bar">
-                <input type="text" id="note" placeholder="Take a note">
-                <button type="submit" id="add-note-btn">
-                    <span class="material-icons-sharp">
-                        done
-                    </span>
-                </button>
-                </div>
-            </form>
-            <section class="main-section">
-                <span class="material-icons-sharp">
-                    lightbulb
-                </span>
-                <h2>Notes you add appear here</h2>
-            </section>
-
-        </main>
+      <!--Main Content-->
+      <main>
+        <div class="theme-toggle-wrapper">
+          <header>
+            <button id="theme-toggle" class="theme-toggle">
+              <span class="material-icons-sharp" id="theme-icon">
+                dark_mode
+              </span>
+            </button>
+          </header>
+        </div>
+        <form id="note-input">
+          <div class="note-input-bar">
+            <input type="text" id="note" placeholder="Take a note" />
+            <button type="submit" id="add-note-btn">
+              <span class="material-icons-sharp"> done </span>
+            </button>
+          </div>
+        </form>
+        <section class="main-section">
+          <span class="material-icons-sharp"> lightbulb </span>
+          <h2>Notes you add appear here</h2>
+        </section>
+      </main>
+      <!--End of Main Content-->
     </div>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
